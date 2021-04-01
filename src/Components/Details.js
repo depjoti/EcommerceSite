@@ -7,7 +7,7 @@ class Details extends Component {
         return (
             <ProductConsumer>
                 {value=>{
-                    const {id,title,img,info,price,company,inCart}=value.detailProduct;
+                    const {id,title,image,info,price,company,inCart}=value.detailProduct;
                     return(
                         <div className="container">
                             <div className="col-10 mx-auto text-center">
@@ -16,7 +16,7 @@ class Details extends Component {
                             
                             <div className="row">
                                 <div className="col-4 mx-auto col-md-4">
-                                    <img src={img} className="img-fluid"/>
+                                    <img src={image} className="img-fluid"/>
                                 </div>
 
                             </div>

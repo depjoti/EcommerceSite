@@ -15,11 +15,11 @@ export default class Nab extends React.Component{
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Link eventkey={0} to="/">Home</Link>
+                            <Link eventkey={1} to="/">Home</Link>
                         </Nav>
-                        <Nav className="mr-auto">
+                        {/* <Nav className="mr-auto">
                             <Link eventkey={1} to="/category"> Categories</Link>
-                        </Nav>
+                        </Nav> */}
                         <Nav className="mr-auto">
                             <Link eventkey={2} to="/cart"> Checkout</Link>
                         </Nav>

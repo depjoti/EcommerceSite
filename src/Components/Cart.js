@@ -38,7 +38,7 @@ class Cart extends Component {
                                             <div className="container-fluid text-center">
                                                 <div className="row">
                                                     <div className="col-10 mx-auto col-lg-2">
-                                                        <img style={{width:'6rem',height:'4rem'}} src={cartData.img} className="img-fluid" />
+                                                        <img style={{width:'6rem',height:'4rem'}} src={cartData.image} className="img-fluid" />
                                                     </div>
                                                     <div className="col-10 mx-auto col-lg-2">
                                                         {cartData.title}

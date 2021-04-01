@@ -7,19 +7,18 @@ import ProductList from './Components/ProductList';
 import {Switch,Route} from 'react-router-dom';
 import Details from './Components/Details';
 import Cart from './Components/Cart';
-import Categories from './Components/Categories';
 //import SearchProduct from './Components/SearchProduct';
 
-function App(props) {
+function App() {
   return (
     <div className="App">
-      {/* <SearchProduct productSearchHandler={props.productSearchHandler()}/> */}
+      
       <Route path="/" component={Nav}/>
+      {/* <SearchProduct/> */}
       <Switch>
         <Route exact path="/" component={ProductList}/>
         <Route path="/details" component={Details}/>
         <Route path="/cart" component={Cart}/>
-        <Route path="/category" component={Categories} />
       </Switch>
     </div>
   );

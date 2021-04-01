@@ -11,7 +11,8 @@ class ProductProvider extends Component {
     modalOpen: false,
     modalProduct: detailProduct,
     cartSubTotal: 0,
-    cartTotal: 0
+    cartTotal: 0,
+    searchfield: []
   };
   componentDidMount() {
     this.setProducts();
@@ -158,9 +159,18 @@ class ProductProvider extends Component {
       };
     });
   };
-  productSearchHandler = id => {
-    this.getItem(id);
-}
+  // handlechange = (event) =>{
+  //   this.setState(()=>{
+  //     return{searchfield: event.target.value}
+  //   })
+   
+      // const product = this.getItem(id);
+      // this.setState(() => {
+      //   return { searchfield: product }
+      // });
+  
+  
+
   render() {
     return (
       <ProductContext.Provider
@@ -174,7 +184,7 @@ class ProductProvider extends Component {
           decrement: this.decrement,
           removeItem: this.removeItem,
           clearCart: this.clearCart,
-          productSearchHandler:this.productSearchHandler
+          //handlechange:this.handlechange
         }}
       >
         {this.props.children}
